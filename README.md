@@ -12,3 +12,7 @@ O programa deve ser interface gráfica interativa e agradável ao usuário
 ## Integrantes
 | [<img src="https://avatars.githubusercontent.com/KyKirma" width=115><br><sub>Pedro Kourly</sub>](https://github.com/KyKirma) |
 | :---: |
+
+## Contribuidores
+| [<img src="https://avatars.githubusercontent.com/gustavomcss" width=115><br><sub>Gustavo</sub>](https://github.com/gustavomcss) |
+| :---: |
