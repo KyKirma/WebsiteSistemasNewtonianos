@@ -19,6 +19,10 @@ html {
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    background-color: #c2f8d0;
+}
+
 /* CABEÇALHO */
 
 header {
@@ -26,11 +30,12 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
+    position: relative;
 }
 
 header > picture > img{
-    background-color: white;
-    width: 50px;
+    background-color: rgb(255, 255, 255);
+    width: 45px;
     height: 50px;
     padding: 5px;
     border-radius: 15%;
@@ -41,12 +46,27 @@ header > h1 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
     text-align: center;
     padding: 20px;
-    width: 100%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+i#burguer {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color3);
 }
 
 /* MENU */
 
 menu {
+    display: none;
+}
+
+/* menu {
     background-color: var(--color3);
     display: flex;
     justify-content: center;
@@ -63,4 +83,11 @@ menu a {
 
 menu a:hover {
     background-color: var(--color4);
+} */
+
+/* MAIN */
+
+main {
+    text-align: justify;
+    text-indent: 30px;
 }

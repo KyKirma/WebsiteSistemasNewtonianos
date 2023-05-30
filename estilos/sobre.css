@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+main {
+    padding: 0px 20px;
+}
+
+main > h2 {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+main > div.equipe {
+    display: flex;
+    background-color: rgb(216, 210, 210);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+main > div.equipe > div.membro {
+    background-color: rgb(221, 221, 208);
+    padding: 8px;
+    border-radius: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    
+}
+
+main > div.equipe > div.membro > img {
+    width: 230px;
+    height: 230px;
+}
+
+main > div.equipe > div.membro > h2 {
+    letter-spacing: 2px;
+    text-align: left;
+    width: 100%;
+}
+
+main > div.equipe > div.membro > p {
+    text-align: left;
+}
+
+main > div.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+main > div.imagem > img {
+    border: 1px solid rgba(0, 0, 0, 0.212);
+}

@@ -1,5 +1,5 @@
-@media screen and (max-width: 682px) {
+@media screen and (min-width: 682px) {
     menu {
-        display: none;
+        display: block;
     }
 }
