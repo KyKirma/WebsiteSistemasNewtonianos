@@ -53,41 +53,56 @@ header > h1 {
     transform: translate(-50%, -50%);
 }
 
+nav {
+    display: none;
+}
+
 i#burguer {
     display: block;
     text-align: center;
     padding: 10px;
     background-color: var(--color3);
+    cursor: pointer;
+    color: white;
 }
 
 /* MENU */
 
 menu {
+    background-color: var(--color3);
+    text-align: center;
     display: none;
 }
 
-/* menu {
-    background-color: var(--color3);
+menu > ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
+}
+
+menu > ul > li {
+    display: flex;
     align-items: center;
 }
 
-
-menu a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
+menu > ul > li:hover {
+    background-color: var(--color4);
 }
 
-menu a:hover {
-    background-color: var(--color4);
-} */
+menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
 
 /* MAIN */
 
 main {
     text-align: justify;
     text-indent: 30px;
+    padding: 25px;
+    margin: 15px auto 0px auto;
+    max-width: 1150px;
 }
