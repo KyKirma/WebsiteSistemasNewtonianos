@@ -25,6 +25,7 @@ html {
 
 body {
     background-color: var(--color5);
+    background: linear-gradient(to top, rgb(148, 187, 189), #c2f8d0);
 }
 
 /* CABEÇALHO */
@@ -59,6 +60,8 @@ header > h1 > a {
     transform: translate(-50%, -50%);
 }
 
+/* MENU */
+
 nav#item {
     background-color: var(--color3);
     display: none;
@@ -91,8 +94,6 @@ i#burguer:hover {
     background-color: var(--color4);
     transition: 0.5s;
 }
-
-/* MENU */
 
 menu {
     background-color: var(--color3);
@@ -127,7 +128,7 @@ menu > ul > li > a {
 /* MAIN */
 
 main {
-    padding: 15px;
+    padding: 20px;
     max-width: 870px;
     margin: auto;
 }
@@ -150,6 +151,7 @@ main > div.imagem {
 
 main > div.imagem > img {
     border: 1px solid rgba(0, 0, 0, 0.25);
+    max-width: 100%;
 }
 
 main > div.textoSistema {
@@ -157,22 +159,27 @@ main > div.textoSistema {
     gap: 20px;
 }
 
-main > div.textoSistema > div {
-    flex: 1;
-    text-align: justify;
-}
-
-/* 
 main > div.textoSistema > div.subtextos {
     flex: 1;
     text-align: justify;
     border-right: 1px solid black;
     padding-right: 20px;
 }
-*/
+
+main > div.textoSistema > div#especial {
+    border-right: 0px;
+    padding-right: 0px;
+}
+
+main > #br {
+    border-color: rgb(0, 0, 0, 0.4);
+}
+
+/* INTEGRANTES */
 
 main > div.equipe {
-    background-color: rgb(155, 191, 192);
+    background-color: rgb(136, 188, 190);
+    border-radius: 16px;
     margin: auto;
     padding: 15px 25px;
     text-indent: 0px;
@@ -188,7 +195,7 @@ main > div.equipe > div.membro {
     margin: 0px 5px 14px 5px
 }
 
-main > div.equipe > div.membro > img {
+main > div.equipe > div.membro > a > img {
     width: 230px;
     height: 230px;
     display: block;
