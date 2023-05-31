@@ -39,8 +39,8 @@ header {
 
 header > picture > a > img{
     background-color: rgb(255, 255, 255);
-    width: 52px;
-    height: 54px;
+    width: 50px;
+    height: 60px;
     padding: 5px;
     border-radius: 15%;
 }
@@ -127,9 +127,81 @@ menu > ul > li > a {
 /* MAIN */
 
 main {
-    text-align: justify;
+    padding: 15px;
+    max-width: 870px;
+    margin: auto;
+}
+
+main > h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+main > p {
     text-indent: 30px;
-    padding: 25px;
-    margin: 15px auto 0px auto;
-    max-width: 1150px;
+    text-align: justify;
+}
+
+main > div.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div.imagem > img {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+main > div.textoSistema {
+    display: flex;
+    gap: 20px;
+}
+
+main > div.textoSistema > div {
+    flex: 1;
+    text-align: justify;
+}
+
+/* 
+main > div.textoSistema > div.subtextos {
+    flex: 1;
+    text-align: justify;
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+*/
+
+main > div.equipe {
+    background-color: rgb(155, 191, 192);
+    margin: auto;
+    padding: 15px 25px;
+    text-indent: 0px;
+    text-align: center;
+}
+
+main > div.equipe > div.membro {
+    display: inline-block;
+    background-color: rgb(221, 221, 208);
+    padding: 8px;
+    border-radius: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 0px 5px 14px 5px
+}
+
+main > div.equipe > div.membro > img {
+    width: 230px;
+    height: 230px;
+    display: block;
+    border-radius: 3%;
+}
+
+main > div.equipe > div.membro > h2 {
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 5px;
+    width: 100%;
+}
+
+main > div.equipe > div.membro > p {
+    text-align: left;
 }
