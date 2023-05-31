@@ -24,8 +24,8 @@ html {
 }
 
 body {
-    background-color: var(--color5);
-    background: linear-gradient(to top, rgb(148, 187, 189), #c2f8d0);
+    background-color: var(--color6);
+    background: linear-gradient(to top, rgb(148, 187, 189), #FFFFFF);
 }
 
 /* CABEÇALHO */
