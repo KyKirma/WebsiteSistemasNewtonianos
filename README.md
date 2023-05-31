@@ -12,8 +12,8 @@ O programa deve ser interface gráfica interativa e agradável ao usuário
 ![Linguagem do codigo](https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png)
 
 ## Integrantes
-| [<img src="https://avatars.githubusercontent.com/KyKirma" width=115><br><sub>Pedro Kourly</sub>](https://github.com/KyKirma) | [<img src="https://avatars.githubusercontent.com/cauanlsreis" width=115><br><sub>Cauan Lucas</sub>](https://github.com/cauanlsreis)
-| :---: | :---: |
+| [<img src="https://avatars.githubusercontent.com/KyKirma" width=115><br><sub>Pedro Kourly</sub>](https://github.com/KyKirma) | [<img src="https://avatars.githubusercontent.com/cauanlsreis" width=115><br><sub>Cauan Lucas</sub>](https://github.com/cauanlsreis) | [<img src="https://avatars.githubusercontent.com/Marcondes05" width=115><br><sub>Marcondes</sub>](https://github.com/Marcondes05)
+| :---: | :---: | :---:
 
 ## Contribuidores
 | [<img src="https://avatars.githubusercontent.com/gustavomcss" width=115><br><sub>Gustavo</sub>](https://github.com/gustavomcss) |
