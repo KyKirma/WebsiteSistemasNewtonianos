@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-        <link rel="stylesheet" href="estilos/mediaquery.css">
-        <link rel="stylesheet" href="estilos/style.css">
-        <link rel="stylesheet" href="estilos/sobre.css">
-        <title>Trabalho Física - Sobre</title>
-    </head>
-
-<body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/sobre.css">
+    <title>Trabalho Física - Sobre</title>
+</head>
+<body onresize="mudouTamanho()">
     <header>
         <picture>
-            <img src="imagens/IFTM.png" alt="IFTM_LOGO">
+            <a href="home.html"><img src="imagens/IFTM.png" alt="IFTM_LOGO"></a>
         </picture>
         <h1>Trabalho Final Física 1</h1>
     </header>
@@ -31,9 +31,9 @@
         </ul>
     </menu>
     <div>
-        <i class="material-icons-round" id="burguer">menu</i>
+        <i class="material-icons-round" id="burguer" onclick="clickMenu()">menu</i>
     </div>
-    <nav>
+    <nav id="item">
         <a href="">Sistema I</a>
         <a href="">Sistema II</a>
         <a href="">Sistema III</a>
@@ -57,7 +57,7 @@
                 <div class = "imagem">
                     <img src="imagens/Sistema 1 .png" alt="Sistema1">
                 </div>
-
+        
         <h2>Integrantes</h2>
         <div class = "equipe">
             <div class = "membro">

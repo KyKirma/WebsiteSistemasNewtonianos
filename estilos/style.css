@@ -1,10 +1,13 @@
 @charset "UTF-8";
 
+/* CONFIGURAÇÕES GLOBAIS */
+
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -12,7 +15,8 @@
     --color2: #2D3A3A;
     --color3: #248232;
     --color4: #2BA84A;
-    --color5: #FCFFFC;
+    --color5: #c2f8d0;
+    --color6: #FFFFFF;
 }
 
 html {
@@ -20,7 +24,7 @@ html {
 }
 
 body {
-    background-color: #c2f8d0;
+    background-color: var(--color5);
 }
 
 /* CABEÇALHO */
@@ -28,22 +32,24 @@ body {
 header {
     background-color: var(--color4);
     display: flex;
+    position: relative;
     align-items: center;
     padding: 10px;
-    position: relative;
 }
 
-header > picture > img{
+header > picture > a > img{
     background-color: rgb(255, 255, 255);
-    width: 45px;
-    height: 50px;
+    width: 52px;
+    height: 54px;
     padding: 5px;
     border-radius: 15%;
 }
 
-header > h1 {
-    color: rgb(255, 255, 255);
+header > h1 > a {
+    color: var(--color6);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+    text-decoration: none;
+    font-size: 26px;
     text-align: center;
     padding: 20px;
     
@@ -53,17 +59,37 @@ header > h1 {
     transform: translate(-50%, -50%);
 }
 
-nav {
+nav#item {
+    background-color: var(--color3);
     display: none;
+    text-align: center;
+}
+
+nav#item > a {
+    color: var(--color6);
+    text-decoration: none;
+    display: block;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+nav#item > a:hover {
+    background-color: var(--color4);
+    transition: 0.5s;
 }
 
 i#burguer {
+    background-color: var(--color3);
+    color: white;
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: var(--color3);
     cursor: pointer;
-    color: white;
+}
+
+i#burguer:hover {
+    background-color: var(--color4);
+    transition: 0.5s;
 }
 
 /* MENU */
@@ -89,6 +115,7 @@ menu > ul > li {
 
 menu > ul > li:hover {
     background-color: var(--color4);
+    transition: 0.5s;
 }
 
 menu > ul > li > a {
