@@ -10,9 +10,9 @@ main > h2 {
 }
 
 main > div.equipe {
+    background-color: rgb(155, 191, 192);
     margin: auto;
     padding: 15px 25px;
-    background-color: rgb(155, 191, 192);
     text-indent: 0px;
     text-align: center;
 }
@@ -36,6 +36,7 @@ main > div.equipe > div.membro > img {
 main > div.equipe > div.membro > h2 {
     letter-spacing: 3px;
     text-align: left;
+    padding-top: 5px;
     width: 100%;
 }
 
