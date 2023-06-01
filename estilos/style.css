@@ -21,12 +21,12 @@
 
 html {
     font-family: 'Ubuntu', sans-serif;
-    font-size: large;
 }
 
 body {
     background-color: var(--color6);
-    background: linear-gradient(to top, rgb(148, 187, 189), #FFFFFF);
+    background: linear-gradient(to top, rgb(167, 212, 214), #FFFFFF);
+    font-size: large;
 }
 
 /* CABEÇALHO */
@@ -156,6 +156,7 @@ main > p {
 }
 
 main > div.imagem {
+    background-image: none;
     display: flex;
     justify-content: center;
     align-items: center;
