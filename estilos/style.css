@@ -21,6 +21,7 @@
 
 html {
     font-family: 'Ubuntu', sans-serif;
+    font-size: large;
 }
 
 body {
@@ -125,11 +126,22 @@ menu > ul > li > a {
     padding: 12px;
 }
 
+/* PICTURE */
+main > picture {
+   display: block;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-image: url("/imagens/IFTM.jpg");
+   background-position: center;
+   height: 100px;
+}
+
+
 /* MAIN */
 
 main {
     padding: 20px;
-    max-width: 870px;
+    max-width: 1000px;
     margin: auto;
 }
 
