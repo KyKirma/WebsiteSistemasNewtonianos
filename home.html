@@ -9,6 +9,7 @@
     <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="estilos/mediaquery.css">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/sobre.css">
     <title>Trabalho Física - Home</title>
 </head>
 <body onresize="mudouTamanho()">
@@ -26,7 +27,6 @@
             <li><a href="">Sistema IV</a></li>
             <li><a href="">Sistema V</a></li>
             <li><a href="">Sistema VI</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
         </ul>
     </menu>
     <div>
@@ -39,10 +39,278 @@
         <a href="">Sistema IV</a>
         <a href="">Sistema V</a>
         <a href="">Sistema VI</a>
-        <a href="sobre.html">Sobre</a>
     </nav>
+    
     <main>
-        
+        <picture>
+        </picture>
+        <h2>Sobre o projeto</h2>
+        <p>
+        Projeto desenvolvido pelos alunos da ementa Ciência da Computação do <b>IFTM - Ituiutaba</b> na criação de um programa que simula diferentes aplicações sobre as <strong>Leis de Newton</strong>
+        </p>
+        <br>
+            <h3>Sistema I</h3>
+                <br>
+                <div class = "imagem">
+                    <img src="imagens/Sistema 1P.png" alt="Sistema1">
+                </div>
+                <br>
+
+                <div class = "textoSistema">
+                    <div class="subtextos">
+                        <p>O <b>sistema 1</b> se baseia em um plano reto, onde até 5 corpos podem ser posicionados. Com isso, o usuário pode selecionar se o sistema há ou não atrito, mudar o valor da gravidade e o valor da massa de cada corpo. O programa consegue calcular a tensão de cada corda e a aceleração do sistema</p>
+                    </div>
+                    <div class="subtextos" id="especial">
+                        <p>
+                            O sistema consta com as seguintes i/o: <br><br>
+                            <div>
+                                <div>
+                                    <b>In</b>
+                                    <ul style="padding-left: 16px;">
+                                        <li><b>F</b> = força resultante (N)</li>
+                                        <li><b>m</b> = massa (Kg)</li>
+                                        <li><b>&#X03BC</b> = coeficiente de atrito</li>
+                                        <li><b>g</b> = gravidade (m/s²)</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>Out</b>
+                                    <ul style="padding-left: 16px; padding-bottom: 10px;">
+                                        <li><b>a</b> = aceleração (m/s²)</li>
+                                        <li><b>T<sub>1,2,n...</b></sub>= tensão da corda (N)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+                <br><hr id="br"><br>
+
+                <h3>Sistema II</h3>
+                <br>
+                <div class = "imagem">
+                    <img src="imagens/Sistema 2P.png" alt="Sistema1">
+                </div>
+                <br>
+
+                <div class = "textoSistema">
+                    <div class="subtextos">
+                    <p>O <b>sistema 2</b> ilustra um sistema de polia perpendicular. O corpo A, de massa m<sub>A</sub>, se encontra em um plano reto desprovido de atrito; enquanto o corpo B, de massa m<sub>B</sub>, se encontra pendurado sob ação da gravidade e da tensão da corda, que une o corpo A ao corpo B, por uma polia. O usuário insere as massas dos corpos e a gravidade e o programa retorna a aceleração e tensão do sistema</p>
+                    </div>
+                    <div class="subtextos" id="especial">
+                        <p>
+                            O sistema consta com as seguintes i/o: <br><br>
+                            <div>
+                                <div>
+                                    <b>In</b>
+                                    <ul style="padding-left: 16px;">
+                                        <li><b>m</b> = massa (kg)</li>
+                                        <li><b>g</b> = gravidade (m/s²)</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>Out</b>
+                                    <ul style="padding-left: 16px; padding-bottom: 10px;">
+                                        <li><b>a</b> = aceleração (m/s²)</li>
+                                        <li><b>T<sub>1</b></sub>= tensão da corda (N)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                
+                <br><hr id="br"><br>
+
+                <h3>Sistema III</h3>
+                <br>
+                <div class = "imagem">
+                    <img src="imagens/Sistema 3P.png" alt="Sistema1">
+                </div>
+                <br>
+
+                <div class = "textoSistema">
+                    <div class="subtextos">
+                    <p>O <b>sistema 3</b> ilustra um sistema de polia vertical. O corpo A, de massa m<sub>1</sub>, e corpo B, de massa m<sub>2</sub>, se encontram pendurados, em uma polia desprovida de atrito, sob ação da gravidade e da tensão da corda. O usuário insere as massas dos corpos e a gravidade e o programa retorna a aceleração e tensão do sistema</p>
+                    </div>
+                    <div class="subtextos" id="especial">
+                        <p>
+                            O sistema consta com as seguintes i/o: <br><br>
+                            <div>
+                                <div>
+                                    <b>In</b>
+                                    <ul style="padding-left: 16px;">
+                                        <li><b>m</b> = massa (kg)</li>
+                                        <li><b>g</b> = gravidade (m/s²)</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>Out</b>
+                                    <ul style="padding-left: 16px; padding-bottom: 10px;">
+                                        <li><b>a</b> = aceleração (m/s²)</li>
+                                        <li><b>T<sub>1</b></sub>= tensão da corda (N)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                
+                <br><hr id="br"><br>
+
+                <h3>Sistema IV</h3>
+                <br>
+                <div class = "imagem">
+                    <img src="imagens/Sistema 4P.png" alt="Sistema1">
+                </div>
+                <br>
+
+                <div class = "textoSistema">
+                    <div class="subtextos">
+                    <p>O <b>sistema 4</b> ilustra um sistema de polia em um plano inclinado. O corpo A, de massa m<sub>1</sub>, se encontra contra um plano inclinado de &#x03B8°, ligado por uma corda ao corpo B, de massa m<sub>2</sub>, que está pendurado, por uma polia de massa e atrito despresiveis
+                    </p>
+                    </div>
+                    <div class="subtextos" id="especial">
+                        <p>
+                            O sistema consta com as seguintes i/o: <br><br>
+                            <div>
+                                <div>
+                                    <b>In</b>
+                                    <ul style="padding-left: 16px;">
+                                        <li><b>m</b> = massa (kg)</li>
+                                        <li><b>g</b> = gravidade (m/s²)</li>
+                                        <li><b>&#x03B8</b> = Angulação (graus)</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>Out</b>
+                                    <ul style="padding-left: 16px; padding-bottom: 10px;">
+                                        <li><b>a</b> = aceleração (m/s²)</li>
+                                        <li><b>T<sub>1</b></sub>= tensão da corda (N)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                
+                <br><hr id="br"><br>
+
+                <h3>Sistema V</h3>
+                <br>
+                <div class = "imagem">
+                    <img src="imagens/Sistema 5P.png" alt="Sistema1">
+                </div>
+                <br>
+
+                <div class = "textoSistema">
+                    <div class="subtextos">
+                    <p>O <b>sistema 5</b> ilustra um sistema de corpos livres.</p>
+                    </div>
+                    <div class="subtextos" id="especial">
+                        <p>
+                            O sistema consta com as seguintes i/o: <br><br>
+                            <div>
+                                <div>
+                                    <b>In</b>
+                                    <ul style="padding-left: 16px;">
+                                        <li><b>m</b> = massa (kg)</li>
+                                        <li><b>g</b> = gravidade (m/s²)</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>Out</b>
+                                    <ul style="padding-left: 16px; padding-bottom: 10px;">
+                                        <li><b>a</b> = aceleração (m/s²)</li>
+                                        <li><b>T<sub>1</b></sub>= tensão da corda (N)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                
+                <br><hr id="br"><br>
+
+                <h3>Sistema VI</h3>
+                <br>
+                <div class = "imagem">
+                    <img src="imagens/Sistema 6P.png" alt="Sistema1">
+                </div>
+                <br>
+
+                <div class = "textoSistema">
+                    <div class="subtextos">
+                    <p>O <b>sistema 6</b> ilustra um sistema de corpos livres. Há 3 blocos no sistema, possuem atrito despresivel e sofrem ação da gravidade. A função do programa é calcular a força que os corpos agem entre sí e calcular a aceleração</p>
+                    </div>
+                    <div class="subtextos" id="especial">
+                        <p>
+                            O sistema consta com as seguintes i/o: <br><br>
+                            <div>
+                                <div>
+                                    <b>In</b>
+                                    <ul style="padding-left: 16px;">
+                                        <li><b>F</b> = força resultante (N)</li>
+                                        <li><b>m</b> = massa (kg)</li>
+                                        <li><b>g</b> = gravidade (m/s²)</li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div>
+                                    <b>Out</b>
+                                    <ul style="padding-left: 16px; padding-bottom: 10px;">
+                                        <li><b>a</b> = aceleração (m/s²)</li>
+                                        <li><b>F<sub>12</b></sub>|<b>F<sub>23</b></sub> = Força entre os blocos (N)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+        <h2>Integrantes</h2>
+        <div class = "equipe">
+            <div class = "membro">
+                <a href="https://github.com/KyKirma" target="blank" rel="external"><img src="https://avatars.githubusercontent.com/KyKirma" alt="Pedro Kourly"></a>
+                <h2>Pedro Kourly</h2>
+                <p>Programador</p>
+            </div>
+            <div class = "membro">
+                <a href="https://github.com/cauanlsreis" target="blank" rel="external"><img src="https://avatars.githubusercontent.com/cauanlsreis" alt="Cauan Reis"></a>
+                <h2>Cauan Lucas</h2>
+                <p>Programador</p>
+            </div>
+            <div class = "membro">
+                <a href="https://github.com/Marcondes05" target="blank" rel="external"><img src="https://avatars.githubusercontent.com/Marcondes05" alt="Marcondes"></a>
+                <h2>Marcondes</h2>
+                <p>Programador</p>
+            </div>
+            <div class = "membro">
+                <a href="https://github.com/FabiIzidoro" target="blank" rel="external"><img src="https://avatars.githubusercontent.com/FabiIzidoro" alt="Fabiana"></a>
+                <h2>Fabiana</h2>
+                <p>Programadora</p>
+            </div>
+            <div class = "membro">
+                <a href="https://github.com/fer-oliveiraa" target="blank" rel="external"><img src="https://avatars.githubusercontent.com/fer-oliveiraa" alt="Fernanda"></a>
+                <h2>Fernanda</h2>
+                <p>Programadora</p>
+            </div>
+            <div class = "membro">
+                <a href="" target="blank" rel="external"><img src="https://avatars.githubusercontent.com/gustavomcss" alt="Gustavo MCS"></a>
+                <h2>Leandro</h2>
+                <p>Programador</p>
+            </div>
+            <div class = "membro">
+                <a href="" target="blank" rel="external"><img src="https://avatars.githubusercontent.com/gustavomcss" alt="Gustavo MCS"></a>
+                <h2>Gustavo MCS</h2>
+                <p>Programador | Contribuidor</p>
+            </div>
+        </div> 
     </main>
     <footer>
 
