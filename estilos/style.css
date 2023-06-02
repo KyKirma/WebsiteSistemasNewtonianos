@@ -227,3 +227,13 @@ main > div.equipe > div.membro > h2 {
 main > div.equipe > div.membro > p {
     text-align: left;
 }
+
+/* RODAPE */
+footer {
+    background-color: var(--color4);
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+}
