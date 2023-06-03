@@ -26,6 +26,7 @@ html {
 body {
     background-color: var(--color6);
     background: linear-gradient(to top, rgb(167, 212, 214), #FFFFFF);
+    background-repeat: no-repeat;
     font-size: large;
 }
 
@@ -126,17 +127,6 @@ menu > ul > li > a {
     padding: 12px;
 }
 
-/* PICTURE */
-main > picture {
-   display: block;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-image: url("/imagens/IFTM.jpg");
-   background-position: center;
-   height: 100px;
-}
-
-
 /* MAIN */
 
 main {
@@ -144,6 +134,15 @@ main {
     max-width: 1000px;
     margin: auto;
 }
+
+main > picture {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imagens/IFTM.jpg");
+    background-position: center;
+    height: 100px;
+} 
 
 main > h2 {
     text-align: center;
