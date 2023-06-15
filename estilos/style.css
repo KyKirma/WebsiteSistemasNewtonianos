@@ -24,10 +24,8 @@ html {
 }
 
 body {
-    background-color: var(--color6);
-    background: linear-gradient(to top, rgb(167, 212, 214), #FFFFFF);
+    background: linear-gradient(to top, rgb(178, 209, 211), #FFFFFF);
     background-repeat: no-repeat;
-    font-size: large;
 }
 
 /* CABEÇALHO */
@@ -187,6 +185,26 @@ main > div.textoSistema > div#especial {
 
 main > #br {
     border-color: rgb(0, 0, 0, 0.4);
+}
+
+/*MAIN SISTEMAS*/
+
+main > div.sistemas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
+
+main > div.sistemas > img {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+}
+
+main > div.sistemas > h1 {
+    text-align: center;
+    margin: auto;
 }
 
 /* INTEGRANTES */
