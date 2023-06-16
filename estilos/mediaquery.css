@@ -20,11 +20,19 @@
     body {
         font-size: 18px;
     }
+
+    main > div.textoSistema > div.subtextos {
+        border-right: 1px solid black;
+    }
 }
 
 @media screen and (max-width: 480px) {
     header > h1 > a{
         font-size: 24px;
+    }
+
+    main > div.textoSistema {
+        flex-direction: column;
     }
 }
 

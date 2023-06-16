@@ -172,9 +172,13 @@ main > div.textoSistema {
 main > div.textoSistema > div.subtextos {
     flex: 1;
     text-align: justify;
-    border-right: 1px solid black;
     padding-right: 20px;
     text-indent: 30px;
+}
+
+main > div.textoSistema > div.subtextos > h3 {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 main > div.textoSistema > div#especial {
@@ -182,6 +186,26 @@ main > div.textoSistema > div#especial {
     padding-right: 0px;
     text-indent: 0px;
 }
+
+main > div.textoSistema > div#calculadora{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+main > div.textoSistema > div.subtextos > div#inputs{
+    display: grid;
+    grid-template-areas: "label input"
+    "label input";
+} 
+
+main > div.textoSistema > div.subtextos > div#inputs > label{
+    grid-area: label;
+} 
+
+main > div.textoSistema > div.subtextos > div#inputs > input{
+    grid-area: input;
+} 
 
 main > #br {
     border-color: rgb(0, 0, 0, 0.4);
@@ -194,6 +218,7 @@ main > div.sistemas{
     flex-direction: column;
     align-items: center;
     height: 350px;
+    padding-bottom: 10px;
 }
 
 main > div.sistemas > img {

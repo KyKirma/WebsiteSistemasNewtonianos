@@ -1,27 +1,12 @@
-const readline = require('readline');
+function calcular() {
+  var massaA = parseFloat(document.getElementById("massaA").value);
+  var massaB = parseFloat(document.getElementById("massaB").value);
+  var gravidade = parseFloat(document.getElementById("gravidade").value);
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+  var pesoB = massaB * gravidade;
+  var aceleracao = pesoB / (massaA + massaB);
+  var tensaoFio1 = massaA * aceleracao;
 
-rl.question("Insira o valor da primeira massa (mA): ", function(massaA) {
-  rl.question("Insira o valor da segunda massa (mB): ", function(massaB) {
-    rl.question("Insira o valor da gravidade (g): ", function(gravidade) {
-      massaA = parseFloat(massaA);
-      massaB = parseFloat(massaB);
-      gravidade = parseFloat(gravidade);
-
-      let pesoB = massaB * gravidade;
-      let aceleracao = pesoB / (massaA + massaB);
-      let tensaoFio1 = massaA * aceleracao;
-      
-
-      console.log("Aceleração do sistema: ", aceleracao, "m/s²");
-      console.log("Tensão do Fio 1: ", tensaoFio1, "N");
-     
-
-      rl.close();
-    });
-  });
-});
+  document.getElementById("aceleracao").innerHTML = "Aceleração do sistema: " + aceleracao + " m/s²";
+  document.getElementById("tensaoFio1").innerHTML = "Tensão do Fio 1: " + tensaoFio1 + " N";
+}
