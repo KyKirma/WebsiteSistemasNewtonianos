@@ -192,7 +192,6 @@ main > #br {
 main > div.sistemas{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 350px;
 }
@@ -200,11 +199,13 @@ main > div.sistemas{
 main > div.sistemas > img {
     border: 1px solid rgba(0, 0, 0, 0.25);
     max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 main > div.sistemas > h1 {
     text-align: center;
-    margin: auto;
+    margin: 1rem;
 }
 
 /* INTEGRANTES */
@@ -249,8 +250,6 @@ main > div.equipe > div.membro > p {
 footer {
     background-color: var(--color4);
     display: flex;
-    position: relative;
-    align-items: center;
     padding: 10px;
     height: 100px;
 }
