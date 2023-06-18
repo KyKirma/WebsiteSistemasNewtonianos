@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/sistema2.js"></script>
     <link rel="stylesheet" href="../estilos/mediaquery.css">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Trabalho Física - Sistema 2</title>
@@ -40,7 +41,35 @@
         <a href="../sistemas/Sistemas06.html">Sistema VI</a>
     </nav>
     <main>
-        
+        <div class="sistemas">
+            <h1>
+                SISTEMA II
+            </h1>
+            <img src="../imagens/Sistema 2P.png" alt="">
+       </div>
+       <div class="textoSistema">
+            <div class="subtextos" id="calculadora" onclick="calcular()">
+                <h3>Calculadora</h3>
+                <div class="subtextos" id="inputs">
+                    <label for="massaA">Massa A (kg):</label>
+                    <input type="number" id="massaA"><br>  
+                </div>
+                <div class="subtextos" id="inputs">
+                    <label for="massaB">Massa B (kg):</label>
+                    <input type="number" id="massaB"><br>
+                </div>
+                <div class="subtextos" id="inputs">
+                    <label for="gravidade">Gravidade (m/s²):</label>
+                    <input type="number" id="gravidade"><br>
+                </div>
+                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show()">Calcular</button><br>
+                <h4 class="show">Resultado</h4>
+                <ul class="show" id="resultado"></ul>
+            </div>
+            <div class="subtextos" id="calculadora" style="border-right: 0px">
+                <h3>Informações</h3>
+            </div>
+       </div>
     </main>
     <footer>
 
