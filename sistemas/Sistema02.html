@@ -48,16 +48,23 @@
             <img src="../imagens/Sistema 2P.png" alt="">
        </div>
        <div class="textoSistema">
-            <div class="subtextos" id="calculadora">
+            <div class="subtextos" id="calculadora" onclick="calcular()">
                 <h3>Calculadora</h3>
                 <div class="subtextos" id="inputs">
                     <label for="massaA">Massa A (kg):</label>
-                    <input type="text" id="massaA"><br>                           
+                    <input type="text" id="massaA"><br>  
+                </div>
+                <div class="subtextos" id="inputs">
                     <label for="massaB">Massa B (kg):</label>
                     <input type="text" id="massaB"><br>
+                </div>
+                <div class="subtextos" id="inputs">
                     <label for="gravidade">Gravidade (m/s²):</label>
                     <input type="text" id="gravidade"><br>
                 </div>
+                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show()">Calcular</button><br>
+                <h4 class="show">Resultado</h4>
+                <p class="show" id="resultado"></p>
             </div>
             <div class="subtextos" id="calculadora" style="border-right: 0px">
                 <h3>Informações</h3>

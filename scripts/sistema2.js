@@ -7,6 +7,6 @@ function calcular() {
   var aceleracao = pesoB / (massaA + massaB);
   var tensaoFio1 = massaA * aceleracao;
 
-  document.getElementById("aceleracao").innerHTML = "Aceleração do sistema: " + aceleracao + " m/s²";
-  document.getElementById("tensaoFio1").innerHTML = "Tensão do Fio 1: " + tensaoFio1 + " N";
+  document.getElementById("resultado").innerHTML = `<b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i><br>
+  <b> Tensão do Fio 1:</b> ${tensaoFio1.toFixed(2)} <i>N</i>`;
 }

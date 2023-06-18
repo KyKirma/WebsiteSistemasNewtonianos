@@ -181,6 +181,16 @@ main > div.textoSistema > div.subtextos > h3 {
     padding-bottom: 10px;
 }
 
+main > div.textoSistema > div.subtextos > h4 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main > div.textoSistema > div.subtextos > .show{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 main > div.textoSistema > div#especial {
     border-right: 0px;
     padding-right: 0px;
@@ -190,23 +200,36 @@ main > div.textoSistema > div#especial {
 main > div.textoSistema > div#calculadora{
     display: flex;
     flex-direction: column;
-    height: 300px;
+    min-height: 500px;
+    height: auto;
+}
+
+main > div.textoSistema > div#calculadora > .show{
+    font-size: 2rem;
 }
 
 main > div.textoSistema > div.subtextos > div#inputs{
     display: grid;
-    grid-template-areas: "label input"
-    "label input";
-} 
-
-main > div.textoSistema > div.subtextos > div#inputs > label{
-    grid-area: label;
 } 
 
 main > div.textoSistema > div.subtextos > div#inputs > input{
-    grid-area: input;
-} 
+    justify-self: center;
+    width: 1fr;
+    margin-left: 10px;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
 
+main > div.textoSistema > div.subtextos > button#calcular:hover{
+    background-color: var(--color4);
+    transition: 0.5s;
+}
+
+main > div.textoSistema > div.subtextos > button#calcular:active{
+    background-color: var(--color3);
+    transition: 0s;
+}
 main > #br {
     border-color: rgb(0, 0, 0, 0.4);
 }
