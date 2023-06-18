@@ -1,6 +1,6 @@
 function calcularSistema(massa1,massa2){
 
-  const g = 10; // m/s2 (gravidade)
+  const g = parseFloat(prompt("Digite o valor da gravidade (m/s^2):")); // m/s2 (gravidade)
 
   //diferança de massas
   var diferencaMassas = massa1 - massa2;
@@ -26,6 +26,5 @@ function calcularSistema(massa1,massa2){
 
   const resultado = calcularSistema(massa1,massa2);
 
-  console.log("Considerando a gravidade igual 10, TEMOS:")
   console.log("Módulo da Aceleração:", resultado.aceleracao, "m/s^2");
   console.log("Tensão do fio:", resultado.tensao, "N");
