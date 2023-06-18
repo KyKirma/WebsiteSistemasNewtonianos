@@ -10,25 +10,57 @@
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 550px){
     body {
         font-size: 14px;
     }
+
+    main > div.textoSistema > div.subtextos > div#inputs{
+        grid-template-columns: 1fr;
+    }
+
+    main > div.textoSistema > div.subtextos > div#inputs > label{
+        text-align: center;
+    }
 }
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 550px){
     body {
         font-size: 18px;
     }
-}
 
-@media screen and (max-width: 480px) {
-    header > h1 > a{
-        font-size: 24px;
+    main > div.textoSistema > div#calculadora > .show{
+        font-size: 20px;
+    }
+
+    main > div.textoSistema > div.subtextos {
+        border-right: 1px solid black;
+    }
+
+    main > div.textoSistema > div.subtextos > div#inputs{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main > div.textoSistema > div.subtextos > div#inputs > label{
+        text-align: right;
     }
 }
 
-@media screen and (min-width: 480px) and (max-width: 700px) {
+@media screen and (max-width: 550px) {
+    header > h1 > a{
+        font-size: 24px;
+    }
+
+    main > div.textoSistema > div#calculadora > .show{
+        font-size: 16px;
+    }
+
+    main > div.textoSistema {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 700px) {
     header > h1 > a {
         max-width: 250px;
     }

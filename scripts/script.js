@@ -11,3 +11,12 @@ function mudouTamanho() {
         item.style.display = 'none'
     }
 }
+
+//trigger show
+function show(){
+    const itemToShow = document.getElementsByClassName("show");
+    for (let i = 0; i < itemToShow.length; i++){
+        itemToShow[i].style.display = "block";
+        itemToShow[i].style.opacity = "1";
+    }
+}
