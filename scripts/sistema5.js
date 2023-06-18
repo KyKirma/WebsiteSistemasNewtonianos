@@ -1,10 +1,10 @@
 function calcular() {
     // Solicitar os valores de entrada ao usuário
-    var massaInput = parseFloat(document.getElementById("Massa").value);
-    var forcaInput = parseFloat(document.getElementById("Forca").value);
-    var razaoInput = parseFloat(document.getElementById("Razao").value);
+    var massaInput = parseFloat(document.getElementById("massa").value);
+    var forcaInput = parseFloat(document.getElementById("forca").value);
+    var razaoInput = parseFloat(document.getElementById("razao").value);
     var qntBlocosInput = parseFloat(document.getElementById("qntBlocos").value);
-    var tracaoInput = parseFloat(document.getElementById("TracaoN").value);
+    var tracaoInput = parseFloat(document.getElementById("tracaoN").value);
     
     // Calcular a massa total com base nos valores de entrada
     const massaN = massaInput + (qntBlocosInput - 1) * razaoInput;
@@ -28,6 +28,8 @@ function calcular() {
     }
   
     var resultado = document.getElementById("resultado");
-    resultado.innerHTML = "<br>Força de aceleração: " + aceleracao.toFixed(2) + " m/s²<br>Força de tensão no Bloco escolhido: " + tensao.toFixed(2) + " N";
+    resultado.innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i></li><br>
+    <li><b> Tensão do fio no Bloco escolhido:</b> ${tensao.toFixed(2)} <i>N</i></li>`;
 
+    
 }
