@@ -29,6 +29,10 @@
         font-size: 18px;
     }
 
+    main > div.textoSistema > div#calculadora > .show{
+        font-size: 20px;
+    }
+
     main > div.textoSistema > div.subtextos {
         border-right: 1px solid black;
     }
@@ -45,6 +49,10 @@
 @media screen and (max-width: 550px) {
     header > h1 > a{
         font-size: 24px;
+    }
+
+    main > div.textoSistema > div#calculadora > .show{
+        font-size: 16px;
     }
 
     main > div.textoSistema {

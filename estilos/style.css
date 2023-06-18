@@ -176,6 +176,12 @@ main > div.textoSistema > div.subtextos {
     text-indent: 30px;
 }
 
+main > div.textoSistema > div.subtextos > ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
 main > div.textoSistema > div.subtextos > h3 {
     text-align: center;
     padding-bottom: 10px;
@@ -184,6 +190,7 @@ main > div.textoSistema > div.subtextos > h3 {
 main > div.textoSistema > div.subtextos > h4 {
     text-align: center;
     padding-bottom: 10px;
+    color: var(--color4);
 }
 
 main > div.textoSistema > div.subtextos > .show{
@@ -202,10 +209,6 @@ main > div.textoSistema > div#calculadora{
     flex-direction: column;
     min-height: 500px;
     height: auto;
-}
-
-main > div.textoSistema > div#calculadora > .show{
-    font-size: 2rem;
 }
 
 main > div.textoSistema > div.subtextos > div#inputs{
