@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/sistema2.js"></script>
     <link rel="stylesheet" href="../estilos/mediaquery.css">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Trabalho Física - Sistema 2</title>
@@ -40,7 +41,63 @@
         <a href="../sistemas/Sistemas06.html">Sistema VI</a>
     </nav>
     <main>
-        
+        <div class="sistemas">
+            <h1>
+                SISTEMA II
+            </h1>
+            <img src="../imagens/Sistema 2P.png" alt="">
+       </div>
+       <div class="textoSistema">
+            <div class="subtextos" id="calculadora">
+                <h3>Calculadora</h3>
+                <div class = "subtextos">
+                    <div class="subtextos inputs">
+                        <label for="massaA">Massa A (kg):</label>
+                        <input type="number" id="massaA" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="massaB">Massa B (kg):</label>
+                        <input type="number" id="massaB" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="gravidade">Gravidade (m/s²):</label>
+                        <input type="number" id="gravidade" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="tempo">Tempo (s):</label>
+                        <input type="number" id="tempo" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="atrito">Atrito:</label>
+                        <input type="checkbox" id="checkAtrito" onchange="checkShow(this)"><br>
+                    </div>
+                    <div class="subtextos inputs" id="oculto">
+                        <label for="Coefatrito">Cf. de Atrito:</label>
+                        <input type="number" id="atrito" style="margin-left: 0px; margin-right: 0px" min="0" max="1" step="0.01" onkeydown="blockEntry(event)"><br>
+                    </div>
+                </div>
+                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show(); calcular()">Calcular</button><br>
+                <h4 class="show">Resultado</h4>
+                <ul class="show" id="resultado"></ul>
+            </div>
+            <div class="subtextos" id="calculadora" style="border-right: 0px">
+                <h3>Informações</h3>
+                <p>
+                    Este programa solicita ao usuário valores de duas <b>massas A e B</b>, bem como a <b>gravidade</b>. Em seguida, calcula o <b>peso</b> da massa B, a <b>aceleração</b> do sistema e a <b>tensão</b> do fio.<br>
+                </p>
+                <p>
+                    Ele também pergunta se há <b>atrito</b> no sistema. Se sim, solicita o <b>coeficiente de atrito</b> e o <b>tempo</b>. Com base nesses valores, calcula a aceleração considerando o atrito, a tensão no fio 1 com atrito, a <b>velocidade final</b> e a <b>distância percorrida</b>.
+                </p>
+                <p>
+                    Se <b>não</b> houver atrito, o programa exibe <i>apenas</i> a aceleração do sistema e a tensão no fio 1. <br><br>
+                    Por fim, exibe os resultados no console e termina a execução.
+                </p>
+            </div>
+       </div>
+       <div class="iframe">
+            <h1>Aula Explicativa</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HYA4r6Hfb3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
     </main>
     <footer>
 
