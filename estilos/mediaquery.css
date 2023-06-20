@@ -15,11 +15,11 @@
         font-size: 14px;
     }
 
-    main > div.textoSistema > div.subtextos > div#inputs{
+    main > div.textoSistema > div.subtextos >  div.subtextos >div.inputs{
         grid-template-columns: 1fr;
     }
 
-    main > div.textoSistema > div.subtextos > div#inputs > label{
+    main > div.textoSistema > div.subtextos >  div.subtextos >div.inputs > label{
         text-align: center;
     }
 }
@@ -33,15 +33,19 @@
         font-size: 20px;
     }
 
-    main > div.textoSistema > div.subtextos {
+    main > div.textoSistema > #calculadora {
         border-right: 1px solid black;
     }
 
-    main > div.textoSistema > div.subtextos > div#inputs{
+    main > div.textoSistema > #especial {
+        border-right: 1px solid black;
+    }
+
+    main > div.textoSistema > div.subtextos > div.subtextos > div.inputs{
         grid-template-columns: 1fr 1fr;
     }
 
-    main > div.textoSistema > div.subtextos > div#inputs > label{
+    main > div.textoSistema > div.subtextos > div.subtextos > div.inputs > label{
         text-align: right;
     }
 }

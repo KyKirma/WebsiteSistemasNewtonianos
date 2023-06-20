@@ -152,6 +152,21 @@ main > p {
     text-align: justify;
 }
 
+main > div.iframe {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div.iframe > iframe{
+    border: 2px solid rgba(255, 255, 255, 0.397);
+    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 main > div.imagem {
     background-image: none;
     display: flex;
@@ -172,8 +187,18 @@ main > div.textoSistema {
 main > div.textoSistema > div.subtextos {
     flex: 1;
     text-align: justify;
+}
+
+main > div.textoSistemas > div.subtextos.hide{
+    display: none;
+}
+main > div.textoSistema > div#especial {
     padding-right: 20px;
     text-indent: 30px;
+}
+
+main > div.textoSistema > div.subtextos > p{
+    text-indent: 20px;
 }
 
 main > div.textoSistema > div.subtextos > ul{
@@ -198,11 +223,7 @@ main > div.textoSistema > div.subtextos > .show{
     transition: opacity 0.3s ease;
 }
 
-main > div.textoSistema > div#especial {
-    border-right: 0px;
-    padding-right: 0px;
-    text-indent: 0px;
-}
+
 
 main > div.textoSistema > div#calculadora{
     display: flex;
@@ -211,19 +232,29 @@ main > div.textoSistema > div#calculadora{
     height: auto;
 }
 
-main > div.textoSistema > div.subtextos > div#inputs{
+main > div.textoSistema > div.subtextos > div.subtextos > #oculto{
+    display: none;
+}
+
+main > div.textoSistema > div.subtextos > div.subtextos > div.inputs{
     display: grid;
 } 
 
-main > div.textoSistema > div.subtextos > div#inputs > input{
+main > div.textoSistema > div.subtextos > div.subtextos > div.inputs > input{
     justify-self: center;
     width: 1fr;
     margin-left: 10px;
+    margin-right: 20px;
     border: 0px;
     border-radius: 5px;
     text-align: center;
 }
 
+main > div.textoSistema > div.subtextos > div.subtextos > div.inputs > input[type="checkbox"]{
+    width: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
 main > div.textoSistema > div.subtextos > button#calcular:hover{
     background-color: var(--color4);
     transition: 0.5s;
@@ -302,5 +333,5 @@ footer {
     background-color: var(--color4);
     display: flex;
     padding: 10px;
-    height: 100px;
+    height: 50px;
 }

@@ -1,62 +1,43 @@
-const readline = require('readline');
+function calcular() {
+  var massaA = parseFloat(document.getElementById("massaA").value);
+  var massaB = parseFloat(document.getElementById("massaB").value);
+  var gravidade = parseFloat(document.getElementById("gravidade").value);
+  var tempo = parseFloat(document.getElementById("tempo").value);
+  var respostaAtrito = document.getElementById("respostaAtrito").value;
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+  var pesoB = massaB * gravidade;
 
-rl.question("Insira o valor da primeira massa (mA): ", function(massaA) {
-  rl.question("Insira o valor da segunda massa (mB): ", function(massaB) {
-    rl.question("Insira o valor da gravidade (g): ", function(gravidade) {
-      rl.question("Insira o tempo: ", function(tempo) {
-      massaA = parseFloat(massaA);
-      massaB = parseFloat(massaB);
-      gravidade = parseFloat(gravidade);
+  // Cálculos sem atrito
+  var aceleracao = pesoB / (massaA + massaB);
+  var tensaoFio1 = massaA * aceleracao;
+  var velocidadeFinal = aceleracao * tempo;
+  var deslocamentoFinal = 0.5 * aceleracao * Math.pow(tempo, 2);
 
-      let pesoB = massaB * gravidade;
+  
 
-      //Cálculos sem atrito 
-      let aceleracao = pesoB / (massaA + massaB);
-      let tensaoFio1 = massaA * aceleracao;
-      let velocidadeFinal = aceleracao * tempo;
-      let deslocamentoFinal = aceleracao * Math.pow(tempo, 2);
+  
+   if (respostaAtrito === false) {
+    // Se houver atrito
+     var coeficienteAtrito = parseFloat(prompt("Insira o coeficiente de atrito:"));
 
+     // Cálculo da aceleração com atrito
+     var aceleracaoComAtrito = (pesoB - coeficienteAtrito * massaA * gravidade) / (massaA + massaB);
+     var tensaoFio1ComAtrito = massaA * aceleracaoComAtrito;
 
-      rl.question("Haverá atrito no sistema? (S/N): ", function(respostaAtrito) {
-        if (respostaAtrito.toUpperCase() === "S") {
-          // Se houver atrito
-          rl.question("Insira o coeficiente de atrito: ", function(coeficienteAtrito) {
-              coeficienteAtrito = parseFloat(coeficienteAtrito);
-              tempo = parseFloat(tempo);
+     // Cálculo da velocidade e deslocamento
+     var velocidadeAtrito = aceleracaoComAtrito * tempo;
+     var deslocamento = 0.5 * aceleracaoComAtrito * Math.pow(tempo, 2);
 
-              // Cálculo da aceleração com atrito
-              let aceleracaoComAtrito = (pesoB - coeficienteAtrito * massaA * gravidade) / (massaA + massaB);
-              let tensaoFio1ComAtrito = massaA * aceleracaoComAtrito;
-
-              // Cálculo da velocidade e deslocamento
-              let velocidadeAtrito = aceleracaoComAtrito * tempo;
-              let deslocamento = 0.5 * aceleracaoComAtrito * Math.pow(tempo, 2);
-
-              // Saída com os resultados considerando o atrito, velocidade e deslocamento
-              console.log("Aceleração do sistema: ", aceleracaoComAtrito, "m/s²");
-              console.log("Tensão do Fio: ", tensaoFio1ComAtrito, "N");
-              console.log("Velocidade final: ", velocidadeAtrito, "m/s");
-              console.log("Distância percorrida: ", deslocamento, "m");
-
-              rl.close();
-            
-          });
-        } else {
-          // Caso não haja atrito
-          console.log("Aceleração do sistema: ", aceleracao, "m/s²");
-          console.log("Tensão do Fio: ", tensaoFio1, "N");
-          console.log("Velocidade Final: ", velocidadeFinal, "m/s" );
-          console.log("Distância percorrida: ", deslocamentoFinal, );
-
-          rl.close();
-        }
-      });
-    });
-  });
-});
-});
+     // Saída com os resultados considerando o atrito, velocidade e deslocamento
+     document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracaoComAtrito.toFixed(2)} <i>m/s²</i></li><br>
+    <li><b>Tensão do Fio:</b> ${tensaoFio1ComAtrito.toFixed(2)} <i>N</i></li><br>
+    <li><b>Velocidade Final:</b> ${velocidadeAtrito} <i>m/s</i></li><br>
+    <li><b>Distancia percorrida:</b> ${deslocamento} <i>m</i></li><br>`;
+   } else {
+    // Caso não haja atrito
+    document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i></li><br>
+    <li><b>Tensão do Fio:</b> ${tensaoFio1.toFixed(2)} <i>N</i></li><br>
+    <li><b>Velocidade Final:</b> ${velocidadeFinal} <i>m/s</i></li><br>
+    <li><b>Distancia percorrida:</b> ${deslocamentoFinal} <i>m</i></li><br>`;
+   }
+}
