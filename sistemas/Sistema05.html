@@ -48,38 +48,41 @@
             <img src="../imagens/Sistema 5P.png" alt="">
        </div>
        <div class="textoSistema">
-            <div class="subtextos" id="calculadora" onclick="calcular()">
+            <div class="subtextos" id="calculadora">
                 <h3>Calculadora</h3>
-                <div class="subtextos" id="inputs">
-                    <label for="massa">Massa (kg):</label>
-                    <input type="number" id="massa"><br>  
+                <div class = "subtextos">
+                    <div class="subtextos inputs">
+                        <label for="massa">Massa (kg):</label>
+                        <input type="number" id="massa" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs">
+                        <label for="forca">Força (N):</label>
+                        <input type="number" id="forca" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="razao">Razão:</label>
+                        <input type="number" id="razao" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="qntBlocos">Qnt Blocos:</label>
+                        <input type="number" id="qntBlocos" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="tracao">Tração em N (N):</label>
+                        <input type="number" id="tracaoN" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
                 </div>
-                <div class="subtextos" id="inputs">
-                    <label for="forca">Força (N):</label>
-                    <input type="number" id="forca"><br>
-                </div>
-                <div class="subtextos" id="inputs">
-                    <label for="razao">Razão:</label>
-                    <input type="number" id="razao"><br>
-                </div>
-                <div class="subtextos" id="inputs">
-                    <label for="qntBlocos">Numero de blocos:</label>
-                    <input type="number" id="qntBlocos"><br>
-                </div>
-                <div class="subtextos" id="inputs">
-                    <label for="tracaoN">Tração N:</label>
-                    <input type="number" id="tracaoN"><br>
-                </div>
-                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show()">Calcular</button><br>
+                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show(); calcular()">Calcular</button><br>
                 <h4 class="show">Resultado</h4>
                 <ul class="show" id="resultado"></ul>
             </div>
             <div class="subtextos" id="calculadora" style="border-right: 0px">
                 <h3>Informações</h3>
-                <p>
-                    
-                </p>
             </div>
+       </div>
+       <div class="iframe">
+            <h1>Aula Explicativa</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HYA4r6Hfb3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
        </div>
     </main>
     <footer>
