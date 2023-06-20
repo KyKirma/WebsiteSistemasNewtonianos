@@ -30,14 +30,6 @@ function checkShow(checkbox){
   }
 };
 
-function show(){
-    const itemToShow = document.getElementsByClassName("hide");
-    for (let i = 0; i < itemToShow.length; i++){
-        itemToShow[i].style.display = "block";
-        itemToShow[i].style.opacity = "1";
-    }
-}
-
 //validações
 function validarPositivo(event) {
     var tecla = event.key;
