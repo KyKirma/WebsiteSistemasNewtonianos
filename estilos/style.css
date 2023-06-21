@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GLOBAIS */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #040F0F;
+    --color2: #2D3A3A;
+    --color3: #248232;
+    --color4: #2BA84A;
+    --color5: #c2f8d0;
+    --color6: #FFFFFF;
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, rgb(191, 213, 214), #FFFFFF);
+    background-repeat: no-repeat;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: var(--color4);
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 10px;
+}
+
+header > picture > a > img{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 15%;
+}
+
+header > h1 > a {
+    color: var(--color6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
+    text-decoration: none;
+    font-size: 26px;
+    text-align: center;
+    padding: 20px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* MENU */
+
+nav#item {
+    background-color: var(--color3);
+    display: none;
+    text-align: center;
+}
+
+nav#item > a {
+    color: var(--color6);
+    text-decoration: none;
+    display: block;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+nav#item > a:hover {
+    background-color: var(--color4);
+    transition: 0.5s;
+}
+
+i#burguer {
+    background-color: var(--color3);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#burguer:hover {
+    background-color: var(--color4);
+    transition: 0.5s;
+}
+
+menu {
+    background-color: var(--color3);
+    text-align: center;
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+menu > ul > li {
+    display: flex;
+    align-items: center;
+}
+
+menu > ul > li:hover {
+    background-color: var(--color4);
+    transition: 0.5s;
+}
+
+menu > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+}
+
+/* MAIN */
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+main > picture {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../imagens/IFTM.jpg");
+    background-position: center;
+    height: 100px;
+} 
+
+main > h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+main > p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+main > div.iframe {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div.iframe > iframe{
+    border: 2px solid rgba(255, 255, 255, 0.397);
+    margin: 20px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+main > div.imagem {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div.imagem > img {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+}
+
+main > div.textoSistema {
+    display: flex;
+    gap: 20px;
+}
+
+main > div.textoSistema > div.subtextos {
+    flex: 1;
+    text-align: justify;
+}
+
+main > div.textoSistemas > div.subtextos.hide{
+    display: none;
+}
+main > div.textoSistema > div#especial {
+    padding-right: 20px;
+    text-indent: 30px;
+}
+
+main > div.textoSistema > div.subtextos > p{
+    text-indent: 20px;
+}
+
+main > div.textoSistema > div.subtextos > ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+main > div.textoSistema > div.subtextos > h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+main > div.textoSistema > div.subtextos > h4 {
+    text-align: center;
+    padding-bottom: 10px;
+    color: var(--color4);
+}
+
+main > div.textoSistema > div.subtextos > .show{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+main > div.textoSistema > div#calculadora{
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    height: auto;
+}
+
+main > div.textoSistema > div.subtextos > div.subtextos > #oculto{
+    display: none;
+}
+
+main > div.textoSistema > div.subtextos > div.subtextos > div.inputs{
+    display: grid;
+} 
+
+main > div.textoSistema > div.subtextos > div.subtextos > div.inputs > input{
+    justify-self: center;
+    width: 1fr;
+    margin-left: 10px;
+    margin-right: 20px;
+    border: 0px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+main > div.textoSistema > div.subtextos > div.subtextos > div.inputs > input[type="checkbox"]{
+    width: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+main > div.textoSistema > div.subtextos > button#calcular:hover{
+    background-color: var(--color4);
+    transition: 0.5s;
+}
+
+main > div.textoSistema > div.subtextos > button#calcular:active{
+    background-color: var(--color3);
+    transition: 0s;
+}
+main > #br {
+    border-color: rgb(0, 0, 0, 0.4);
+}
+
+/*MAIN SISTEMAS*/
+
+main > div.sistemas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    padding-bottom: 10px;
+}
+
+main > div.sistemas > img {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+main > div.sistemas > h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+/* INTEGRANTES */
+
+main > div.equipe {
+    background-color: rgb(136, 188, 190);
+    border-radius: 16px;
+    margin: auto;
+    padding: 15px 25px;
+    text-indent: 0px;
+    text-align: center;
+}
+
+main > div.equipe > div.membro {
+    display: inline-block;
+    background-color: rgb(221, 221, 208);
+    padding: 8px;
+    border-radius: 2%;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 0px 5px 14px 5px
+}
+
+main > div.equipe > div.membro > a > img {
+    width: 230px;
+    height: 230px;
+    display: block;
+    border-radius: 3%;
+}
+
+main > div.equipe > div.membro > h2 {
+    letter-spacing: 3px;
+    text-align: left;
+    padding-top: 5px;
+    width: 100%;
+}
+
+main > div.equipe > div.membro > p {
+    text-align: left;
+}
+
+/* RODAPE */
+footer {
+    background-color: var(--color4);
+    display: flex;
+    padding: 10px;
+    height: 50px;
+}

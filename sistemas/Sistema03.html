@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/sistema3.js"></script>
+    <link rel="stylesheet" href="../estilos/mediaquery.css">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Trabalho Física - Sistema 3</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <picture>
+            <a href="../home.html"><img src="../imagens/IFTM.png" alt="IFTM_LOGO"></a>
+        </picture>
+        <h1><a href="../home.html">Trabalho Final Física 1</a></h1>
+    </header>
+    <menu id = "itens">
+        <ul>
+            <li><a href="../sistemas/Sistema01.html">Sistema I</a></li>
+            <li><a href="../sistemas/Sistema02.html">Sistema II</a></li>
+            <li><a href="../sistemas/Sistema03.html">Sistema III</a></li>
+            <li><a href="../sistemas/Sistema04.html">Sistema IV</a></li>
+            <li><a href="../sistemas/Sistema05.html">Sistema V</a></li>
+            <li><a href="../sistemas/Sistemas06.html">Sistema VI</a></li>
+        </ul>
+    </menu>
+    <div>
+        <i class="material-icons-round" id="burguer" onclick="clickMenu()">menu</i>
+    </div>
+    <nav id="item">
+        <a href="../sistemas/Sistema01.html">Sistema I</a>
+        <a href="../sistemas/Sistema02.html">Sistema II</a>
+        <a href="../sistemas/Sistema03.html">Sistema III</a>
+        <a href="../sistemas/Sistema04.html">Sistema IV</a>
+        <a href="../sistemas/Sistema05.html">Sistema V</a>
+        <a href="../sistemas/Sistemas06.html">Sistema VI</a>
+    </nav>
+    <main>
+        <div class="sistemas">
+            <h1>
+                SISTEMA III
+            </h1>
+            <img src="../imagens/Sistema 3P.png" alt="">
+       </div>
+       <div class="textoSistema">
+            <div class="subtextos" id="calculadora">
+                <h3>Calculadora</h3>
+                <div class = "subtextos">
+                    <div class="subtextos inputs">
+                        <label for="massaA">Massa 1 (kg):</label>
+                        <input type="number" id="massaA" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="massaB">Massa 2 (kg):</label>
+                        <input type="number" id="massaB" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="gravidade">Gravidade (m/s²):</label>
+                        <input type="number" id="gravidade" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                </div>
+                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show(); calcular()">Calcular</button><br>
+                <h4 class="show">Resultado</h4>
+                <ul class="show" id="resultado"></ul>
+            </div>
+            <div class="subtextos" id="calculadora" style="border-right: 0px">
+                <h3>Informações</h3>
+                <p>
+                    O Sistema III mostra dois blocos ligados por uma corda que passa por uma polia sem atrito, inserindo a <b>massa</b> dos blocos A e B e o valor da <b>gravidade</b>, o programa irá retornar o módulo da <b>aceleração</b> dos blocos e a <b>tração</b> da corda<br>
+                </p>
+            </div>
+       </div>
+       <div class="iframe">
+            <h1>Aula Explicativa</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HYA4r6Hfb3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html>
