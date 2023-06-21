@@ -117,6 +117,8 @@
                                     <ul style="padding-left: 16px; list-style-position: inside;">
                                         <li><b>m</b> = massa (kg)</li>
                                         <li><b>g</b> = gravidade (m/s²)</li>
+                                        <li><b>t</b> = tempo (s) <i>[opcional]</i></li>
+                                        <li><b>&#X03BC</b> = coeficiente de atrito <i>[opcional]</i></li>
                                     </ul>
                                 </div>
                                 <br>
@@ -124,7 +126,9 @@
                                     <b>Out</b>
                                     <ul style="padding-left: 16px; list-style-position: inside; padding-bottom: 10px;">
                                         <li><b>a</b> = aceleração (m/s²)</li>
-                                        <li><b>T</b>= tensão da corda (N)</li>
+                                        <li><b>T</b> = tensão da corda (N)</li>
+                                        <li><b>V<sub>f</b></sub> = velocidade final (m/s)</li>
+                                        <li><b>&#X0394 d</b> = desloamento (m)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -144,7 +148,7 @@
                 <div class = "textoSistema">
                     <div class="subtextos" id="especial">
                         <p>
-                            O Sistema III mostra dois blocos ligados por uma corda que passa por uma polia sem atrito, inserindo a <b>massa</b> dos blocos A e B e o valor da <b>gravidade</b>, o programa irá retornar o módulo da <b>aceleração</b> dos blocos e a <b>tração</b> da corda<br>
+                            O <b>Sistema 3</b> mostra dois blocos ligados por uma corda que passa por uma polia sem atrito, inserindo a <b>massa</b> dos blocos A e B e o valor da <b>gravidade</b>, o programa irá retornar o módulo da <b>aceleração</b> dos blocos e a <b>tração</b> da corda<br>
                         </p>
                     </div>
                     <div class="subtextos">
@@ -156,8 +160,6 @@
                                     <ul style="padding-left: 16px; list-style-position: inside;">
                                         <li><b>m</b> = massa (kg)</li>
                                         <li><b>g</b> = gravidade (m/s²)</li>
-                                        <li><b>t</b> = tempo (s) <i>[opcional]</i></li>
-                                        <li><b>&#X03BC</b> = coeficiente de atrito <i>[opcional]</i></li>
                                     </ul>
                                 </div>
                                 <br>
@@ -166,8 +168,6 @@
                                     <ul style="padding-left: 16px; list-style-position: inside; padding-bottom: 10px;">
                                         <li><b>a</b> = aceleração (m/s²)</li>
                                         <li><b>T</b> = tensão da corda (N)</li>
-                                        <li><b>V<sub>f</b></sub> = velocidade final (m/s)</li>
-                                        <li><b>&#X0394 d</b> = desloamento (m)</li>
                                     </ul>
                                 </div>
                             </div>
@@ -225,7 +225,12 @@
 
                 <div class = "textoSistema">
                     <div class="subtextos" id="especial">
-                    <p>O <b>sistema 5</b> ilustra um sistema de corpos livres.</p>
+                        <p>
+                            O <b>Sistema V</b> é uma função que realiza cálculos relacionado a <b>forças, massas e aceleração</b>
+                        </p><br> 
+                        <p>
+                            Ele recebe valores de entrada fornecidos pelo usuário, calcula a massa total com base nesses valores e, em seguida, realiza calculos de <b>aceleração e tensão</b> dependendo da tração fornecida.
+                        </p><br>
                     </div>
                     <div class="subtextos">
                         <p>
@@ -234,8 +239,11 @@
                                 <div>
                                     <b>In</b>
                                     <ul style="padding-left: 16px; list-style-position: inside;">
-                                        <li><b>m</b> = massa (kg)</li>
-                                        <li><b>g</b> = gravidade (m/s²)</li>
+                                        <li><b>m</b> = massa 1º bloco (kg)</li>
+                                        <li><b>fr</b> = força (N)</li>
+                                        <li><b>r</b> = razão</li>
+                                        <li><b>qntB</b> = quantidade de blocos</li>
+                                        <li><b>T</b> = tração (N)</li>
                                     </ul>
                                 </div>
                                 <br>
@@ -243,7 +251,7 @@
                                     <b>Out</b>
                                     <ul style="padding-left: 16px; list-style-position: inside; padding-bottom: 10px;">
                                         <li><b>a</b> = aceleração (m/s²)</li>
-                                        <li><b>T<sub>1</b></sub>= tensão da corda (N)</li>
+                                        <li><b>T</b>= tensão do fio no bloco escolhido (N)</li>
                                     </ul>
                                 </div>
                             </div>
