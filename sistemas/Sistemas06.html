@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/sistema6.js"></script>
     <link rel="stylesheet" href="../estilos/mediaquery.css">
     <link rel="stylesheet" href="../estilos/style.css">
     <title>Trabalho Física - Sistema 6</title>
@@ -40,7 +41,57 @@
         <a href="../sistemas/Sistemas06.html">Sistema VI</a>
     </nav>
     <main>
-        
+        <div class="sistemas">
+            <h1>
+                SISTEMA VI
+            </h1>
+            <img src="../imagens/Sistema 6P.png" alt="">
+       </div>
+       <div class="textoSistema">
+            <div class="subtextos" id="calculadora">
+                <h3>Calculadora</h3>
+                <div class = "subtextos">
+                    <div class="subtextos inputs">
+                        <label for="massa1">Massa 1 (kg):</label>
+                        <input type="number" id="massa1" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="massa2">Massa 2 (kg):</label>
+                        <input type="number" id="massa2" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="massa3">Massa 3 (kg):</label>
+                        <input type="number" id="massa3" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="forca">Força (N):</label>
+                        <input type="number" id="forca" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="gravidade">Gravidade (m/s²):</label>
+                        <input type="number" id="gravidade" min="0" onkeydown="validarPositivo(event)"><br>
+                    </div>
+                    <div class="subtextos inputs" >
+                        <label for="atrito">Atrito:</label>
+                        <input type="checkbox" id="checkAtrito" onchange="checkShow(this)"><br>
+                    </div>
+                    <div class="subtextos inputs" id="oculto">
+                        <label for="Coefatrito">Cf. de Atrito:</label>
+                        <input type="number" id="atrito" style="margin-left: 0px; margin-right: 0px" min="0" max="1" step="0.01" onkeydown="blockEntry(event)"><br>
+                    </div>
+                </div>
+                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show(); calcular()">Calcular</button><br>
+                <h4 class="show">Resultado</h4>
+                <ul class="show" id="resultado"></ul>
+            </div>
+            <div class="subtextos" id="calculadora" style="border-right: 0px">
+                <h3>Informações</h3>
+            </div>
+       </div>
+       <div class="iframe">
+            <h1>Aula Explicativa</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HYA4r6Hfb3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       </div>
     </main>
     <footer>
 
