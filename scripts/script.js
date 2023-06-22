@@ -1,46 +1,78 @@
-function clickMenu() {
-    if (item.style.display == 'block') {
-        item.style.display = 'none'
-    } else {
-        item.style.display = 'block'
-    }
-}
+const readline = require('readline');
 
-function mudouTamanho() {
-    if (window.innerWidth >= 850) {
-        item.style.display = 'none'
-    }
-}
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
 
-//trigger show
-function show(){
-    const itemToShow = document.getElementsByClassName("show");
-    for (let i = 0; i < itemToShow.length; i++){
-        itemToShow[i].style.opacity = "1";
-    }
-}
+rl.question("Insira o valor da primeira massa (mA): ", function(massaA) {
+  rl.question("Insira o valor da segunda massa (mB): ", function(massaB) {
+    rl.question("Insira o valor da gravidade (g): ", function(gravidade) {
+      rl.question("Insira o tempo: ", function(tempo) {
+        massaA = parseFloat(massaA);
+        massaB = parseFloat(massaB);
+        gravidade = parseFloat(gravidade);
 
-function checkShow(checkbox){
-    const minhaDiv = document.getElementById('oculto');
+        let pesoB = massaB * gravidade;
 
-    if (checkbox.checked) {
-        minhaDiv.style.display = 'grid'; // Exibe a div quando a checkbox for marcada
-    } else {
-        minhaDiv.style.display = 'none'; // Oculta a div quando a checkbox for desmarcada
-  }
-};
+        // Cálculos sem atrito 
+        let aceleracao = pesoB / (massaA + massaB);
+        let tensaoFio1 = massaA * aceleracao;
+        let velocidadeFinal = aceleracao * tempo;
+        let deslocamentoFinal = aceleracao * Math.pow(tempo, 2);
 
-//validações
-function validarPositivo(event) {
-    var tecla = event.key;
-    if (tecla === "-") {
-      event.preventDefault();
-    }
-}
+        rl.question("Haverá atrito no sistema? (S/N): ", function(respostaAtrito) {
+          if (respostaAtrito.toUpperCase() === "S") {
+            // Se houver atrito
+            rl.question("Insira o coeficiente de atrito: ", function(coeficienteAtrito) {
+              coeficienteAtrito = parseFloat(coeficienteAtrito);
 
-function blockEntry(event) {
-    var tecla = event.key;
-    if (tecla =! null) {
-      event.preventDefault();
-    }
-}
+              // Verifica se a força aplicada é menor que a força de atrito estático máximo
+              if (pesoB < coeficienteAtrito * massaA * gravidade) {
+                aceleracao = 0.0;
+                console.log("Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo.");
+                console.log("Então os corpos permanecerão em repouso.");
+              } else {
+                // Cálculo da aceleração com atrito
+                let aceleracaoComAtrito = (pesoB - coeficienteAtrito * massaA * gravidade) / (massaA + massaB);
+                let tensaoFio1ComAtrito = massaA * aceleracaoComAtrito;
+
+                // Verifica se a aceleração com atrito é negativa e atribui zero se for o caso
+                if (aceleracaoComAtrito < 0) {
+                  aceleracaoComAtrito = 0.0;
+                  console.log("Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo.");
+                  console.log("Então os corpos permanecerão em repouso.");
+                }
+
+                // Cálculo da velocidade e deslocamento
+                let velocidadeAtrito = aceleracaoComAtrito * tempo;
+                let deslocamento = 0.5 * aceleracaoComAtrito * Math.pow(tempo, 2);
+
+                // Saída com os resultados considerando o atrito, velocidade e deslocamento
+                console.log("Aceleração do sistema com atrito: ", aceleracaoComAtrito, "m/s²");
+                console.log("Tensão do Fio 1 com atrito: ", tensaoFio1ComAtrito, "N");
+                console.log("Velocidade final: ", velocidadeAtrito, "m/s");
+                console.log("Distância percorrida: ", deslocamento, "m");
+              }
+              rl.close();
+            });
+          } else {
+            // Caso não haja atrito
+            // Verifica se a aceleração sem atrito é negativa e atribui zero se for o caso
+            if (aceleracao < 0) {
+              aceleracao = 0.0;
+              console.log("Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo.");
+              console.log("Então os corpos permanecerão em repouso.");
+            }
+
+            console.log("Aceleração do sistema sem atrito: ", aceleracao, "m/s²");
+            console.log("Tensão do Fio: ", tensaoFio1, "N");
+            console.log("Velocidade Final sem atrito: ", velocidadeFinal, "m/s");
+            console.log("Distância percorrida sem atrito: ", deslocamentoFinal, "m");
+            rl.close();
+          }
+        });
+      });
+    });
+  });
+});
