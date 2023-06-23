@@ -22,13 +22,14 @@ function calcular() {
 
       // Cálculo da aceleração com atrito
       var aceleracaoComAtrito = (pesoB - coeficienteAtrito * massaA * gravidade) / (massaA + massaB);
-      var tensaoFio1ComAtrito = massaA * aceleracaoComAtrito;
-
-
+      
       if (aceleracaoComAtrito < 0) {
         aceleracaoComAtrito = 0.0;
         explicacao = "Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo. Então os corpos permanecerão em repouso.";
       }
+
+      var tensaoFio1ComAtrito = massaA * aceleracaoComAtrito;
+
       // Cálculo da velocidade e deslocamento
       var velocidadeAtrito = aceleracaoComAtrito * tempo;
       var deslocamento = 0.5 * aceleracaoComAtrito * Math.pow(tempo, 2);
