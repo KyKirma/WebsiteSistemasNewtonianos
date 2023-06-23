@@ -38,9 +38,14 @@ function validarPositivo(event) {
     }
 }
 
-function blockEntry(event) {
-    var tecla = event.key;
-    if (tecla =! null) {
-      event.preventDefault();
-    }
+function blockEntry() {
+    var input = document.getElementById("atrito");
+    var valor = input.value;
+
+    if (valor < 0 || valor > 1) {
+        input.value = ''; // Limpa o valor do input
+        input.setCustomValidity('O valor deve estar entre 0 e 1.'); // Define uma mensagem de erro personalizada
+      } else {
+        input.setCustomValidity(''); // Remove a mensagem de erro
+      }
 }
