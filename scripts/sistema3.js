@@ -5,6 +5,7 @@ function calcular(){
   //diferança de massas
   var diferencaMassas = massa1 - massa2;
   var modulo = 0;
+  var tracao;
 
   if(diferencaMassas < 0){
     modulo = diferencaMassas * (-1)
@@ -13,7 +14,12 @@ function calcular(){
   }
   const aceleracao = (g * (modulo)) / (massa1 + massa2);
 
-  const tensao = g * massa1  +  aceleracao * massa1 ;
+  if(massa1 > massa2){
+    tracao = g * massa1  -  aceleracao * massa1 
+  }else{
+    tracao = g * massa1  +  aceleracao * massa1
+  }
+ const tensao = tracao
 
   document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i></li><br>
   <li><b> Tensão do Fio:</b> ${tensao.toFixed(2)} <i>N</i></li>`;
