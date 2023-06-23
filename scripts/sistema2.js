@@ -16,7 +16,7 @@ function calcular() {
     // Verifica se a força aplicada é menor que a força de atrito estático máximo
     if (pesoB < coeficienteAtrito * massaA * gravidade) {
       aceleracao = 0.0;
-      explicacao = "Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo. Então os corpos permanecerão em repouso.";
+      explicacao = " Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo. Então os corpos permanecerão em repouso.";
 
     }
 
