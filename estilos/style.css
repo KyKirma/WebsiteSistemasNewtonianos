@@ -207,6 +207,10 @@ main > div.textoSistema > div.subtextos > ul{
     list-style-position: inside;
 }
 
+main > div.textoSistema > div.subtextos > ul > li > p{
+    padding-right: 15px;
+}
+
 main > div.textoSistema > div.subtextos > h3 {
     text-align: center;
     padding-bottom: 10px;

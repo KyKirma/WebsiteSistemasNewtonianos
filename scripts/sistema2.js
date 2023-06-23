@@ -35,7 +35,7 @@ function calcular() {
       var deslocamento = 0.5 * aceleracaoComAtrito * Math.pow(tempo, 2);
 
       // Saída com os resultados considerando o atrito, velocidade e deslocamento
-      document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracaoComAtrito.toFixed(2)} <i>m/s²</i><br>${explicacao}</li><br>
+      document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracaoComAtrito.toFixed(2)} <i>m/s²</i><br><p>${explicacao}</p></li><br>
       <li><b>Tensão do Fio:</b> ${tensaoFio1ComAtrito.toFixed(2)} <i>N</i></li><br>
       <li><b>Velocidade final:</b> ${velocidadeAtrito.toFixed(2)} <i>m/s</i></li><br>
       <li><b>Distância percorrida:</b> ${deslocamento.toFixed(2)} <i>m</i></li><br>`;
@@ -52,7 +52,7 @@ function calcular() {
       explicacao = "Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo. Então os corpos permanecerão em repouso.";
     }
 
-    document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i><br>${explicacao}</li><br>
+    document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i><br><p>${explicacao}</p></li><br>
     <li><b>Tensão do Fio:</b> ${tensaoFio1.toFixed(2)} <i>N</i></li><br>
     <li><b>Velocidade final:</b> ${velocidadeFinal.toFixed(2)} <i>m/s</i></li><br>
     <li><b>Distância percorrida:</b> ${deslocamentoFinal.toFixed(2)} <i>m</i></li><br>`;
