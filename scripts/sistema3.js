@@ -14,12 +14,7 @@ function calcular(){
   }
   const aceleracao = (g * (modulo)) / (massa1 + massa2);
 
-  if(massa1 > massa2){
-    tracao = g * massa1 - aceleracao * massa1
-  }else{
-    tracao = g * massa1  +  aceleracao * massa1
-  }
-  const tensao = tracao ;
+  const tensao = g * massa1  +  aceleracao * massa1 ;
 
   document.getElementById("resultado").innerHTML = `<li><b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i></li><br>
   <li><b> Tensão do Fio:</b> ${tensao.toFixed(2)} <i>N</i></li>`;
