@@ -18,7 +18,7 @@ function calcular() {
       aceleracao = 0.0;
       explicacao = "Foi considerada a aceleração como zero, pois o valor da força aplicada no sistema é menor que a força de atrito estático máximo. Então os corpos permanecerão em repouso.";
 
-    } else {
+    }
 
       // Cálculo da aceleração com atrito
       var aceleracaoComAtrito = (pesoB - coeficienteAtrito * massaA * gravidade) / (massaA + massaB);
@@ -39,7 +39,6 @@ function calcular() {
       <li><b>Velocidade final:</b> ${velocidadeAtrito.toFixed(2)} <i>m/s</i></li><br>
       <li><b>Distância percorrida:</b> ${deslocamento.toFixed(2)} <i>m</i></li><br>`;
       
-    }
   } else {
     // Caso não haja atrito
     var aceleracao = pesoB / (massaA + massaB);
