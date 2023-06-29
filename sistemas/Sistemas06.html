@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <script src="../scripts/script.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <script src="../scripts/sistema6.js"></script>
     <link rel="stylesheet" href="../estilos/mediaquery.css">
     <link rel="stylesheet" href="../estilos/style.css">
@@ -30,7 +31,12 @@
         </ul>
     </menu>
     <div>
-        <i class="material-icons-round" id="burguer" onclick="clickMenu()">menu</i>
+        <i id="burguer" onclick="clickMenu()"><lord-icon
+            src="https://cdn.lordicon.com/jtqpkhoh.json"
+            trigger="morph"
+            colors="primary:#ffffff,secondary:#08a88a"
+            style="width: 20%; margin: auto;">
+        </lord-icon></i>
     </div>
     <nav id="item">
         <a href="../sistemas/Sistema01.html">Sistema I</a>
@@ -80,7 +86,7 @@
                         <input type="number" id="atrito" style="margin-left: 0px; margin-right: 0px" min="0" max="1" step="0.01" onkeydown="blockEntry(event)"><br>
                     </div>
                 </div>
-                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show(); calcular()">Calcular</button><br>
+                <button id="calcular" onclick="show(); calcular()">Calcular</button><br>
                 <h4 class="show">Resultado</h4>
                 <ul class="show" id="resultado"></ul>
             </div>

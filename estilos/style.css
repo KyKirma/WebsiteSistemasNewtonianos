@@ -89,6 +89,10 @@ i#burguer {
     cursor: pointer;
 }
 
+i#burguer > img{
+    width: 5%;
+}
+
 i#burguer:hover {
     background-color: var(--color4);
     transition: 0.5s;
@@ -257,9 +261,18 @@ main > div.textoSistema > div.subtextos > div.subtextos > div.inputs > input[typ
     margin-left: 0px;
     margin-right: 0px;
 }
+
+main > div.textoSistema > div.subtextos > button#calcular{
+    border: 1px; 
+    height: 30px; 
+    margin-right: 1rem; 
+    margin-left: 1rem; 
+    border-radius: 20px
+}
+
 main > div.textoSistema > div.subtextos > button#calcular:hover{
     background-color: var(--color4);
-    transition: 0.5s;
+    transition: 0.5s ease;
 }
 
 main > div.textoSistema > div.subtextos > button#calcular:active{

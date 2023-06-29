@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
     <script src="../scripts/script.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
     <script src="../scripts/sistema4.js"></script>
     <link rel="stylesheet" href="../estilos/mediaquery.css">
     <link rel="stylesheet" href="../estilos/style.css">
@@ -30,7 +31,12 @@
         </ul>
     </menu>
     <div>
-        <i class="material-icons-round" id="burguer" onclick="clickMenu()">menu</i>
+        <i id="burguer" onclick="clickMenu()"><lord-icon
+            src="https://cdn.lordicon.com/jtqpkhoh.json"
+            trigger="morph"
+            colors="primary:#ffffff,secondary:#08a88a"
+            style="width: 20%; margin: auto;">
+        </lord-icon></i>
     </div>
     <nav id="item">
         <a href="../sistemas/Sistema01.html">Sistema I</a>
@@ -68,17 +74,23 @@
                         <input type="number" id="angulo" min="0" onkeydown="validarPositivo(event)"><br>
                     </div>
                 </div>
-                <button id="calcular" style="border: 1px; height: 30px; margin-right: 1rem; margin-left: 1rem; border-radius: 20px" onclick="show(); calcular()">Calcular</button><br>
+                <button id="calcular" onclick="show(); calcular()">Calcular</button><br>
                 <h4 class="show">Resultado</h4>
                 <ul class="show" id="resultado"></ul>
             </div>
             <div class="subtextos" id="calculadora" style="border-right: 0px">
                 <h3>Informações</h3>
+                <p>
+                    O sistema IV calcula o peso tangente com base nas massas, ângulo e gravidade fornecidos. 
+                </p>
+                <p>
+                    Com esse valor, ele determina a aceleração e a tensão em um sistema físico, retornando os resultados.
+                </p>
             </div>
        </div>
        <div class="iframe">
             <h1>Aula Explicativa</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/HYA4r6Hfb3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yt7b3s9NmWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
        </div>
     </main>
     <footer>
