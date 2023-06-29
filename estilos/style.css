@@ -50,9 +50,8 @@ header > h1 > a {
     color: var(--color6);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.20);
     text-decoration: none;
-    font-size: 26px;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     
     position: absolute;
     top: 50%;
