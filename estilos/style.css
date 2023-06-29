@@ -136,8 +136,6 @@ main > picture {
     display: block;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../imagens/IFTM.jpg");
-    background-position: center;
     height: 100px;
 } 
 

@@ -22,11 +22,33 @@
     main > div.textoSistema > div.subtextos >  div.subtextos >div.inputs > label{
         text-align: center;
     }
+
+    main > picture {
+        background-image: url("../imagens/IFTM.jpg");
+        background-position: top;
+    }
+
+    header > h1 > a{
+        font-size: 24px;
+    }
+
+    main > div.textoSistema > div#calculadora > .show{
+        font-size: 16px;
+    }
+
+    main > div.textoSistema {
+        flex-direction: column;
+    }
 }
 
 @media screen and (min-width: 550px){
     body {
         font-size: 18px;
+    }
+
+    main > picture {
+        background-image: url("../imagens/IFTMPraca.jpg");
+        background-position: center;
     }
 
     main > div.textoSistema > div#calculadora > .show{
@@ -47,20 +69,6 @@
 
     main > div.textoSistema > div.subtextos > div.subtextos > div.inputs > label{
         text-align: right;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    header > h1 > a{
-        font-size: 24px;
-    }
-
-    main > div.textoSistema > div#calculadora > .show{
-        font-size: 16px;
-    }
-
-    main > div.textoSistema {
-        flex-direction: column;
     }
 }
 
