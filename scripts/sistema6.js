@@ -51,7 +51,7 @@ function calcular() {
     <li><b>Peso Bloco 2:</b> ${pesoBloco2.toFixed(2)} <i>N</i></li><br>
     <li><b>Peso Bloco 3:</b> ${pesoBloco3.toFixed(2)} <i>N</i></li><br>
     <li><b>Aceleração do sistema:</b> ${aceleracao.toFixed(2)} <i>m/s²</i></li><br>
-    <li><b>Força de 1 sobre 2:</b> ${forcaAB.toFixed(2)} <i>m/s</i></li><br>
-    <li><b>Força de 2 sobre 3:</b> ${forcaBC.toFixed(2)} <i>m/s</i></li><br>`;
+    <li><b>Força de 1 sobre 2:</b> ${forcaAB.toFixed(2)} <i>N</i></li><br>
+    <li><b>Força de 2 sobre 3:</b> ${forcaBC.toFixed(2)} <i>N</i></li><br>`;
   }
 }
