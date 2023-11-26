@@ -21,7 +21,7 @@ function calcular(){
     explicacao = 'Nesse caso o <b>Bloco 1 desce</b> e o <b>Bloco 2 sobe</b> e temos:'
   } else {
     tracao = g * massa1 + aceleracao * massa1
-    explicacao = 'Nesse caso o <b>Bloco 1 desce</b> e o <b>Bloco 2 sobe</b> e temos:'
+    explicacao = 'Nesse caso o <b>Bloco 2 desce</b> e o <b>Bloco 1 sobe</b> e temos:'
   }
   const tensao = tracao;
 
